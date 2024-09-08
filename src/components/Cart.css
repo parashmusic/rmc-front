@@ -1,0 +1,56 @@
+/* checkout-button styling */
+button.checkout-button {
+    margin-left: -2px;
+    margin-right: -2px;
+    margin-top: 2rem /* 32px */;
+    margin-bottom: 2rem;
+    --color: #121212;
+    font-family: inherit;
+    display: inline-block;
+    width: auto; /* Auto to make it flexible */
+    height: 40px; /* Fixed height in px for consistency */
+    padding: 0 20px; /* Adds padding to give the checkout-button appropriate width */
+    line-height: normal; /* Normal line height */
+    /* margin: 10px 5px; */
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 16px; /* Reduced font-size for better fit */
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    text-align: center; /* Aligns text in the middle */
+}
+
+button.checkout-button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    transition: all 0.7s;
+}
+
+button.checkout-button:hover {
+    color: #fff;
+}
+
+button.checkout-button:before {
+    top: 120%;
+    left: 120%;
+}
+
+button.checkout-button:hover:before {
+    top: -40px;
+    left: -10px;
+}
+
+button.checkout-button:active:before {
+    background: #121212;
+    transition: background 0s;
+}

@@ -1,0 +1,288 @@
+.hero-section {
+    position: relative;
+    /* background-color: #ffffff; */
+    padding: 22px;
+    text-align: center;
+    min-height: 600px;
+    box-sizing: border-box;
+    /* margin-top: -25px; */
+    margin-top: -80px;
+    /* margin-bottom: 60px; */
+    margin-bottom: 80px;
+    z-index: 1;
+}
+.p {
+    width: 533px;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-weight: 250;
+    color: #3C4F77;
+    font-size: 18px;
+    text-align: center;
+    line-height: 28px;
+    
+    letter-spacing: 0.03em;
+    
+}
+.text-wrapper-6 {
+    position: absolute;
+    top: 197px;
+    left: 50%; 
+    transform: translateX(-50%);
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-weight: 250;
+    color: #3C4F77;
+    font-size: 18px;
+    text-align: center;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+    /* Amplifying Authentic Sounds */
+
+/* position: absolute;
+width: 373px;
+height: 28px;
+left: 532px;
+top: 198px;
+
+font-family: 'Cocogoose';
+font-style: normal;
+font-weight: 250;
+font-size: 18px;
+line-height: 28px;
+
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #3C4F77; */
+
+
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    width: 535px;
+    align-items: center;
+    gap: 41px;
+    position: absolute;
+    top: 234px;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.text-wrapper-7 {
+    /* font-family: "Poppins", Helvetica, sans-serif; */
+    /* font-weight: 700; */
+    color: #353535;
+    font-size: 56px;
+    text-align: center;
+    line-height: 80px;
+    margin-top: -1px; 
+
+font-family: 'against';
+font-style: normal;
+font-weight: 400;
+
+
+
+/* position: absolute;
+width: 535px;
+height: 160px;
+left: 452px;
+top: 256px;
+
+font-family: 'against';
+font-style: normal;
+font-weight: 400;
+font-size: 56px;
+line-height: 80px;
+
+text-align: center;
+
+color: #353535; */
+
+
+}
+
+
+
+/* .button-start {
+  
+
+box-sizing: border-box;
+
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 14px 32px;
+gap: 10px;
+cursor: pointer;
+position: absolute;
+width: 218px;
+height: 63px;
+top: 330px;
+
+background: linear-gradient(136.24deg, rgba(73, 152, 241, 0.7) -9.94%, rgba(60, 79, 119, 0.7) 98.71%);
+border-radius: 4px;
+
+} */
+
+/* .text-wrapper-8 {
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 24px;
+    white-space: nowrap;
+} */
+
+
+.button-start {
+    box-sizing: border-box;
+  
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 32px;
+    gap: 10px;
+    cursor: pointer;
+    position: absolute;
+    width: 218px;
+    height: 63px;
+    top: 330px;
+  
+    background: linear-gradient(136.24deg, rgba(73, 152, 241, 0.7) -9.94%, rgba(60, 79, 119, 0.7) 98.71%);
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out; /* Transition for hover effect */
+    box-shadow: 0px 4px 28px rgba(73, 152, 241, 0.2); /* Soft initial shadow */
+  }
+  
+  .button-start:hover {
+    background: linear-gradient(136.24deg, rgba(73, 152, 241, 0.7) -9.94%, rgba(86, 124, 206, 0.974) 98.71%); /* Hover gradient */
+    transform: translateY(-5px); /* Lift the button up slightly */
+    /* box-shadow: 0px 8px 28px rgba(136, 136, 136, 0.404);  */
+  }
+  
+  .button-start:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out; /* Transition for hover effect */
+    border-radius: 4px;
+  }
+  
+  .button-start:hover:before {
+    opacity: 1;
+  }
+  
+  .text-wrapper-8 {
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 24px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    white-space: nowrap;
+    z-index: 1; /* Ensures the text stays above the hover effects */
+  }
+  
+.text-wrapper-8:hover{
+    transform: scale(1.1);
+}
+/* .hero-section {
+    position: relative;
+    
+    padding: 20px;
+    text-align: center;
+    min-height: 600px; 
+    box-sizing: border-box;
+} */
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .hero-section {
+        padding: 10px;
+        min-height: 400px;
+        margin-top: -79px;
+    }
+
+    .text-wrapper-6 {
+        top: 150px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .frame {
+        width: 90%;
+        top: 200px;
+        gap: 30px;
+    }
+
+    .text-wrapper-7 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 10px;
+    }
+
+    .button-start {
+        width: 180px;
+        height: 50px;
+        padding: 10px 20px;
+        top: 220px;
+        
+    }
+
+    .text-wrapper-8 {
+        font-size: 18px;
+    }
+}
+
+/* For even smaller screens, like mobile phones */
+@media screen and (max-width: 480px) {
+    .text-wrapper-6 {
+        top: 120px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .frame {
+        top: 160px;
+        gap: 20px;
+    }
+
+    .text-wrapper-7 {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .button-start {
+        width: 160px;
+        height: 45px;
+        padding: 8px 16px;
+        top: 241px;
+    }
+
+    .text-wrapper-8 {
+        font-size: 16px;
+    }
+}
+
+  

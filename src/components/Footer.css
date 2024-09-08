@@ -1,0 +1,119 @@
+/* Footer styles */
+/* .footer {
+    background-color: #201E1E;
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-bar img {
+    width: 100%;
+  }
+  
+  .terms {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .terms p {
+    margin: 5px 0;
+    color: black;
+  } */
+  /* General Footer Styling */
+/* General Footer Styling */
+/* General Footer Styling */
+.footer {
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333; /* Default text color */
+}
+
+/* Footer Bar Styling */
+.footer-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #A09383, #3C4F77);
+  border-radius: 22px;
+  padding: 10px 20px;
+  margin: 20px auto;
+  max-width: 1218px;
+  flex-wrap: wrap;
+}
+
+/* Social Icons Section */
+.social-icons {
+  display: flex;
+  justify-content: center; /* Center align on small screens */
+  gap: 20px; /* Reduced gap for smaller screens */
+  margin: 8px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.social-icons img {
+  width: 30px; /* Reduced size for smaller screens */
+  height: 30px;
+}
+
+/* Connect Section */
+.connect h3 {
+  font-size: 0.8em;
+  color: #ffffff;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  text-align: center; /* Centered text for small screens */
+}
+
+/* Terms and Conditions Section */
+.terms {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 0.9em;
+  flex-wrap: wrap; /* Wrap to avoid overflow */
+  text-align: center; /* Center align text for small screens */
+}
+
+.terms p {
+  margin: 0;
+  padding: 5px 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.0em;
+  font-weight: 1000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-bar {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px; /* Increased padding for breathing room */
+  }
+
+  .social-icons {
+    gap: 15px; /* Further reduce gap on small screens */
+    margin-top: 10px;
+  }
+
+  .connect {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .terms {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px; /* Add gap between terms to avoid clutter */
+  }
+}

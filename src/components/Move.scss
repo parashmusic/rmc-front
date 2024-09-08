@@ -1,0 +1,38 @@
+.__movingtext::-webkit-scrollbar{
+    display: none;
+}
+.__movingtext{
+    h1{
+      font-family: Outfit;
+    padding-bottom: 15px;
+    animation: moving 10s linear 0s infinite forwards;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+}
+
+@keyframes moving{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .__movingtext h1 {
+      font-size: 6rem; /* Scale down font size on tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .__movingtext h1 {
+      font-size: 6rem; /* Further scale down font size on mobile devices */
+    }
+  }
+  

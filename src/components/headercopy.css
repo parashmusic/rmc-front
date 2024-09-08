@@ -1,0 +1,113 @@
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .logo-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .logo-text {
+    font-family: 'Vilaka Font Demo Version', sans-serif;
+    font-size: 50px;
+    margin-left: 10px;
+    color: #5d5d5d;
+  }
+  
+  .nav {
+    display: flex;
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav ul li {
+    margin: 0 15px;
+    color: #3c4f77;
+    font-weight: 600;
+  }
+
+  .nav ul li a {
+    text-decoration: none; /* Removes the underline */
+    color: #3C4F77; /* Dark gray color for text */
+    /* font-weight: 500; Medium font weight */
+    padding: 10px 15px;/*  Padding around the text */
+     border-radius: 5px; /*Slightly rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  /* Hover effect */
+  .nav ul li a:hover {
+    /* background-color: #007BFF; Primary color background on hover */
+    color: #788fc0; /* Dark gray color for text */
+   
+  }
+  
+  /* Active link styling */
+  .nav ul li a.active {
+    background-color: #0056b3; /* Darker primary color for active link */
+    color: white;
+  }
+  
+  .auth {
+    display: flex;
+  }
+  
+  .auth button {
+    margin-left: 15px;
+  }
+  
+  .login {
+    background: none;
+    border: none;
+    color: #525252;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .signup {
+    background: linear-gradient(136.24deg, rgba(134, 168, 207, 1) 9.94%, rgba(60, 79, 119, 1) 98.71%);
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 100;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  

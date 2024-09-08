@@ -1,0 +1,248 @@
+.black-header {
+  background-color: black;
+  color: white;
+}
+header.header.black-header{
+  background-color: black;
+  color: white;
+}
+header.header.black-header .nav ul li a {
+  color: white; /* For nav links in black header */
+}
+
+header.header.black-header .auth button {
+  color: white;
+  border: 0px solid rgb(0, 0, 0);
+}
+
+header.header.black-header .signup{
+  /* box-shadow: 0 0.4rem 2.8rem rgba(238, 76, 219, 0.5); */
+  background: linear-gradient(136.24deg, #86a8cf -9.94%, rgba(238, 76, 219, 0.8588235378) 98.71%);
+}
+header.header.black-header .logo-text {
+  color: white;
+}
+
+/* You can add more styles as needed for specific elements when the header is black */
+
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #ffffff;
+  position: relative; 
+  padding-left: 5vw;
+  padding-right: 5vw;
+  z-index: 1000; /* Ensure it stays on top of the HeroSection */
+}
+
+.logo-bar {
+  display: flex;
+  align-items: center;
+  cursor: pointer; /* Added cursor style */
+  transition: transform 0.3s ease;
+}
+.logo-bar :hover{
+  transform: translateY(-5px);
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.logo-text {
+  font-family: 'Vilaka Font Demo Version', sans-serif;
+  font-size: 3rem; /* Adjusted to rem for better responsiveness */
+  margin-left: 10px;
+  color: #5d5d5d;
+  transition: transform 0.3s ease;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav ul li {
+  margin: 0 15px;
+  color: #3c4f77;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #3C4F77;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: transform 0.3s ease,  color 0.3s ease; 
+
+  
+}
+
+.nav ul li a:hover,
+.nav ul li a:focus {
+  color: #89a4df;
+  /* color: rgba(86, 124, 206, 0.974) 98.71%; */
+  transform: translateY(-5px); /* Translate effect on hover */
+}
+
+/* .nav ul li a.active {
+  background-color: #0056b3;
+  color: white;
+  
+} */
+/* .nav ul li :active{
+  display: none;
+
+} */
+.auth {
+  display: flex;
+}
+
+.auth button {
+  margin-left: 15px;
+}
+
+.login {
+  background: none;
+  border: none;
+  color: #525252;
+  font-size: 1rem; /* Adjusted to rem */
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer; /* Added cursor style */
+  transition: transform 0.3s ease;
+}
+
+.login:hover,
+.login:focus {
+  color: #788fc0; /* Darker color on hover/focus */
+  transform: translateY(-4px);
+}
+
+.signup {
+  background: linear-gradient(136.24deg, rgba(134, 168, 207, 1) 9.94%, rgba(60, 79, 119, 1) 98.71%);
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 0.9375rem; /* Adjusted to rem */
+  font-weight: 100;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer; /* Added cursor style */
+  transition: transform 0.3s ease,color 0.6s ease;
+}
+
+.signup:hover,
+.signup:focus {
+  background: linear-gradient(136.24deg, rgba(134, 168, 207, 0.8) 9.94%, rgba(60, 79, 119, 0.8) 98.71%);
+  transform: translateY(-4px);
+}
+
+/* Sidebar and Overlay */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+  transition: right 0.3s ease;
+  /* z-index: 1000; */
+
+  z-index: 1100; 
+}
+
+.sidebar.show {
+  right: 0;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.close-sidebar {
+  background: none;
+  border: none;
+  font-size: 2.2rem;
+  color: #3C4F77;
+  cursor: pointer;
+  align-self: flex-end;
+  margin: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #3C4F77;
+  font-size: 1.125rem; /* Adjusted to rem */
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a:focus {
+  color: #788fc0;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  z-index: 999;
+  backdrop-filter: blur(8px); /* Adjust blur effect here */
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
+  /* transition: right 3.9s ease; */
+  cursor: pointer; /* Added cursor style */
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem; /* Adjusted to rem */
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .auth {
+    display: none; 
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .hide-logo .logo-icon {
+    display: none;
+  }
+  
+}

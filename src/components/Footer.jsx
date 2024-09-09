@@ -83,7 +83,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import './Footer.css';
 import instagramIcon from '../assets/instagram.svg';
-import twitterIcon from '../assets/twitter.svg';
+import twitterIcon from '../assets/Twitter.svg';
 import youtubeIcon from '../assets/youtube.svg';
 import discordIcon from '../assets/discord.svg';
 

@@ -1,7 +1,20 @@
 import React from 'react';
 import './HeroSection.css';
+import againstFontWoff2 from '../assets/fonts/against-Regular.woff2';
+import againstFontWoff from '../assets/fonts/against-Regular.woff';
+
 
 const HeroSection = () => {
+  <style jsx>{`
+    @font-face {
+      font-family: 'against';
+      src: url(${againstFontWoff2}) format('woff2'),
+           url(${againstFontWoff}) format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+  `}</style>
   return (
     <div className="hero-section">
       <div className="text-wrapper-6">Amplifying Authentic Sounds</div>
@@ -19,3 +32,4 @@ const HeroSection = () => {
 }
 
 export default HeroSection;
+
